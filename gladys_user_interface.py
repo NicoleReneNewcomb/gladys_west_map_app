@@ -45,7 +45,7 @@ def run_tests(user_name):
         print("=== Yes ====")
 
     # show current user_name
-    print("Current User Name: ", user_name)
+    print("Current User Name:", user_name)
 
     average = compute.gps_average(4, 5)
     print("Average: ", average)
