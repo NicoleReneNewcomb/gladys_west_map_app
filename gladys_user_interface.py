@@ -37,6 +37,9 @@ def run_tests(user_name):
     """
     print("Running a few tests:")
 
+    # test login function
+    user_login.login()
+
     # test if user logged in
     print("User Logged In? ")
     if (user_name.isspace()):
@@ -45,13 +48,17 @@ def run_tests(user_name):
         print("=== Yes ====")
 
     # show current user_name
-    print("Current User Name:", user_name)
+    print("User Email:", user_name)
 
     average = compute.gps_average(4, 5)
-    print("Average: ", average)
+    print("Average:", average)
 
     distance = compute.distance(4, 5, 45, 60)
-    print("Distance: ", distance)
+    print("Distance:", distance)
+
+    # test altitude return value of x, y = 5, 15 
+    altitude = satellite.gps_value(50, 99, "altitude")
+    print("Altitude:", altitude)
 
 # function to print a line
 

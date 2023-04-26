@@ -44,7 +44,7 @@ def login():
 
         if (is_valid_email(lower_email) == True):
             password = input("Please enter your password: ")
-            print("Inicialiting West's App...")
+            print("Initializing West's App...")
             return lower_email  # = userName
 
         else:
